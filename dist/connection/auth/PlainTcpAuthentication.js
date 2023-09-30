@@ -21,7 +21,7 @@ var PlainTcpAuthentication = /** @class */ (function () {
             var onConnect = function () {
                 transport.write(SaslPackageFactory_1.SaslPackageFactory.create(SaslPackageFactory_1.StatusCode.START, Buffer.from(PlainTcpAuthentication.AUTH_MECH)));
                 transport.write(SaslPackageFactory_1.SaslPackageFactory.create(SaslPackageFactory_1.StatusCode.OK, Buffer.concat([
-                    Buffer.from(_this.username || ""),
+                    Buffer.from(""),
                     Buffer.from([0]),
                     Buffer.from(_this.username || ""),
                     Buffer.from([0]),
